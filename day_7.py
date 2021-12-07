@@ -1,8 +1,6 @@
 #day 7
 
 def textToArray(fname):
-
-
     with open(fname) as f:
         res = f.readline()
 
@@ -11,7 +9,6 @@ def textToArray(fname):
     return [int(v) for v in res.split(',')]
 
 def findMinCostBrute(nums):
-
     min_cost = float('inf')
     nums.sort()
     max_val = nums[-1]
